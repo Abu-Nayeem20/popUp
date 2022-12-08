@@ -12,23 +12,25 @@
 </head>
 <body>
   <div id="addModal" class="modal modal4">
-<div class="addModal-content">
-<div class="addModal-top" id="modalClose">
-<i class="fas fa-times"></i>	
-</div>
+  <div class="addModal-top" id="modalClose" onclick="closePopUp()">
+  <i class="fas fa-times"></i>	
+  </div>
 <a href="https://play.google.com/store/apps/details?id=com.ortho_songbad" target="_blank" rel="noopener"><img src="https://orthosongbad.com/wp-content/uploads/2022/12/pop-up.gif" alt="Ad" /></a>
 
-</div>
 </div>
     
       <script type="text/javascript">
     function loadPopup(){
-      document.getElementById("modalClose").addEventListener("click", function(){
-          document.getElementById("addModal").style.display = 'none';
-          document.getElementById("addModal").style.opacity = '0';
-        });
+          document.getElementById("addModal").style.display = 'block';
     };
+
+    function closePopUp() {
+      document.getElementById("addModal").style.display = 'none';
+    };
+
     window.onload(loadPopup());
+    
+     
 </script>
 </body>
 </html>
